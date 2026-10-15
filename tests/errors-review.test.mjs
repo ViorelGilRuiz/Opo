@@ -1,0 +1,34 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { parseHTML } from 'linkedom';
+import { renderErrors } from '../ui/errors.mjs';
+import { initialState, recordAnswer } from '../core/learning.mjs';
+import { verifiedQuestionBank } from '../data/official-catalog.mjs';
+
+test('Repaso incluye blancos, prioriza vencidos, limita sesión y muestra la nota personal sin HTML', () => {
+  const { window } = parseHTML('<html><body><main></main></body></html>');
+  Object.assign(globalThis, { window, document: window.document, HTMLElement: window.HTMLElement });
+  const host = window.document.querySelector('main');
+  const state = initialState();
+  const questions = verifiedQuestionBank.slice(0, 12);
+  for (const q of questions) recordAnswer(state, q, null, 1000);
+  state.questions[questions[1].id].dueAt = Date.now() - 1000;
+  state.notes = { [questions[1].id]: '<script>mi regla</script>' };
+  const events = state.events.length;
+  let selected;
+  renderErrors(host, state, qs => { selected = qs; }, () => {});
+  assert.equal(host.querySelectorAll('.error-item').length, 12);
+  assert.equal(host.querySelector('.error-item [data-retry]').getAttribute('data-retry'), questions[1].id);
+  assert.equal(host.querySelector('script'), null);
+  assert.match(host.querySelector('.memory-trick').textContent, /mi regla/);
+  host.querySelector('[data-review-batch]').click();
+  assert.equal(selected.length, 10);
+  assert.equal(new Set(selected.map(q => q.id)).size, 10);
+  const filter = host.querySelector('#errorFilter');
+  filter.querySelector('[value="due"]').selected = true;
+  filter.dispatchEvent(new window.Event('change'));
+  assert.equal(host.querySelectorAll('.error-item').length, 1);
+  host.querySelector('[data-review-batch]').click();
+  assert.equal(selected.length, 1);
+  assert.equal(state.events.length, events);
+});

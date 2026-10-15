@@ -1,0 +1,446 @@
+[
+  {
+    "id": "zaragoza-2026-1731-1-12",
+    "number": 12,
+    "prompt": "¿Cuál es la principal diferencia entre una vista y una vista materializada en Oracle?",
+    "options": [
+      "La vista materializada permite joins y la vista no.",
+      "La vista materializada almacena físicamente los datos resultantes",
+      "La vista materializada no puede actualizarse."
+    ],
+    "page": 4,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-13",
+    "number": 13,
+    "prompt": "¿Qué ocurre si se produce una excepción NO manejada en PL/SQL?",
+    "options": [
+      "Oracle la ignora.",
+      "Se hace commit automático.",
+      "Se propaga al entorno que invocó el bloque"
+    ],
+    "page": 4,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-14",
+    "number": 14,
+    "prompt": "El operador del álgebra relacional que elimina atributos o columnas es:",
+    "options": [
+      "Selección.",
+      "Proyección",
+      "Diferencia."
+    ],
+    "page": 4,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-18",
+    "number": 18,
+    "prompt": "¿Qué principio de seguridad se vulnera principalmente por un ransomware?",
+    "options": [
+      "Integridad y disponibilidad.",
+      "Autenticidad.",
+      "No repudio."
+    ],
+    "page": 4,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-21",
+    "number": 21,
+    "prompt": "En una red de almacenamiento Storage Area Network (SAN), ¿cómo se presenta habitualmente el almacenamiento a los servidores?",
+    "options": [
+      "Como una estructura de directorios y ficheros compartidos mediante el protocolo SMB/CIFS.",
+      "Como un repositorio de objetos accesible exclusivamente mediante APIs de servicios web.",
+      "Como unidades de disco lógicas (LUN) que el sistema operativo gestiona a nivel de bloque."
+    ],
+    "page": 5,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-22",
+    "number": 22,
+    "prompt": "En los entornos de virtualización de centros de datos, ¿qué papel desempeña el hipervisor?",
+    "options": [
+      "Ejecutar las aplicaciones del usuario final directamente sobre elfirmware de la BIOS.",
+      "Intermediar entre el hardware físico y las máquinas virtuales para gestionar el reparto de recursos.",
+      "Realizar el balanceo de carga de tráfico HTTP entre servidores web físicos."
+    ],
+    "page": 5,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-23",
+    "number": 23,
+    "prompt": "En el modelo de servicios en la nube conocido como Infraestructura como Servicio (IaaS), ¿qué responsabilidad asume el proveedor?",
+    "options": [
+      "La gestión total de los datos y la configuración de las aplicaciones finales del cliente.",
+      "El suministro de recursos de computación, almacenamiento y red de forma virtualizada",
+      "El mantenimiento de las licencias del software de gestión empresarial (ERP) utilizado por el cliente."
+    ],
+    "page": 5,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-24",
+    "number": 24,
+    "prompt": "¿Cuál es la principal mejora que aporta el protocolo HTTPS respecto al protocolo HTTP estándar?",
+    "options": [
+      "La optimización del tamaño de las imágenes transmitidas mediante algoritmos de compresión en el lado del cliente.",
+      "La seguridad en la transmisión de datos mediante el uso de protocolos de cifrado TLS/SSL.",
+      "La capacidad de mantener sesiones persistentes sin necesidad de utilizar cookies de navegador."
+    ],
+    "page": 5,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-25",
+    "number": 25,
+    "prompt": "Dentro del ecosistema Java EE, ¿cuál es el propósito de un servidor de aplicaciones?",
+    "options": [
+      "Proveer un contenedor y servicios de infraestructura para ejecutar lógica de negocio distribuida y componentes empresariales.",
+      "Gestionar exclusivamente el envío de correos electrónicos a través del protocolo SMTP.",
+      "Actuar como un servidor de archivos para el despliegue de contenido multimedia estático."
+    ],
+    "page": 6,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-26",
+    "number": 26,
+    "prompt": "¿Qué tecnología se emplea de forma estándar en Java EE para establecer la comunicación con bases de datos relacionales?",
+    "options": [
+      "El uso de scripts de automatización de shell en el servidor de base de datos.",
+      "El uso de controladores JDBC y la configuración de pools de conexiones (DataSources)",
+      "El intercambio de ficheros CSV a través de conexiones seguras FTP."
+    ],
+    "page": 6,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-27",
+    "number": 27,
+    "prompt": "El modelo de desarrollo en cascada se caracteriza principalmente por ser:",
+    "options": [
+      "Un proceso altamente flexible donde se pueden cambiar los requisitos en cualquier momento del desarrollo.",
+      "Una metodología ágil basada en la entrega diaria de prototipos funcionales al usuario.",
+      "Una metodología lineal y secuencial donde cada fase debe completarse íntegramente para iniciar la siguiente."
+    ],
+    "page": 6,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-28",
+    "number": 28,
+    "prompt": "¿Cómo se comunican los distintos niveles en una arquitectura moderna de desarrollo de aplicaciones?",
+    "options": [
+      "Mediante el acceso compartido a variables globales residentes en la memoria física común de los servidores.",
+      "Mediante el uso de protocolos estandarizados e interfaces de programación de aplicaciones (API) bien definidas.",
+      "Mediante el envío de paquetes de control a través de los servicios de comunicaciones."
+    ],
+    "page": 6,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-29",
+    "number": 29,
+    "prompt": "¿Cuál es la principal diferencia entre un entorno de Big Data y un sistema de Business Intelligence (BI) tradicional?",
+    "options": [
+      "El Big Data gestiona volúmenes masivos de datos (estructurados y no estructurados) variables en el tiempo, mientras que BI se centra principalmente en datos estructurados.",
+      "El BI se enfoca en el almacenamiento de datos no estructurados, mientras que el Big Data solo admite tablas SQL.",
+      "El BI requiere hardware especializado de tipo Mainframe, mientras que el Big Data solo puede ejecutarse en la nube pública."
+    ],
+    "page": 6,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-30",
+    "number": 30,
+    "prompt": "Antes de realizar una actualización crítica de un parche de seguridad en el sistema operativo de un servidor virtual, ¿cuál es la mejor práctica en VMware para asegurar una recuperación inmediata?",
+    "options": [
+      "Realizar una clonación completa de la máquina virtual hacia un datastore de backup externo.",
+      "Exportar la máquina virtual a formato OVF para tener un respaldo en caso de corrupción del almacenamiento local.",
+      "Realizar un Snapshot (Instantánea) de la máquina virtual para poder revertir todos los cambios en segundos si la actualización falla."
+    ],
+    "page": 7,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-31",
+    "number": 31,
+    "prompt": "En la infraestructura de soporte de un CPD, ¿cuál es el propósito técnico de un sistema de alimentación ininterrumpida (SAI) ?",
+    "options": [
+      "Realizar el filtrado de armónicos únicamente cuando se detecta un corte en el suministro de la red eléctrica principal.",
+      "Conmutar a baterías solo en caso de picos de tensión superiores al 15% del valor nominal para proteger la electrónica de red.",
+      "Proporcionar energía eléctrica limpia y constante a los equipos, aislándolos de cualquier anomalía de la red durante un tiempo determinado."
+    ],
+    "page": 7,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-32",
+    "number": 32,
+    "prompt": "¿Cuál es la principal ventaja de la interfaz UEFI en comparación con la BIOS tradicional en cuanto a la gestión de almacenamiento?",
+    "options": [
+      "Soporte nativo para particiones muy grandes mediante el uso de GPT.",
+      "Eliminación completa de la necesidad de controladores para discos duros SATA.",
+      "Capacidad de formatear discos magnéticos a una velocidad diez veces superior."
+    ],
+    "page": 7,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-33",
+    "number": 33,
+    "prompt": "¿Qué tipo de red local lógica se puede crear en un switch para agrupar dispositivos independientemente de su ubicación física?",
+    "options": [
+      "VPN",
+      "WLAN",
+      "VLAN"
+    ],
+    "page": 7,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-34",
+    "number": 34,
+    "prompt": "¿Cuál es el propósito del protocolo LDAP en el contexto de la administración de directorios?",
+    "options": [
+      "Permitir buscar destinatarios con el buzón lleno en el envío de correos electrónicos masivos.",
+      "Permitir la consulta y modificación de información en servicios de directorio como eDirectory.",
+      "Permitir el acceso a los datos de un directorio ligero."
+    ],
+    "page": 7,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-35",
+    "number": 35,
+    "prompt": "¿Cuál es la función principal del comando'sudo' en la administración de sistemas Linux?",
+    "options": [
+      "Cambiar permanentemente la identidad del usuario actual a root.",
+      "Cerrar la sesión actual para entrar como otro usuario.",
+      "Ejecutar un comando con los privilegios de otro usuario."
+    ],
+    "page": 8,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-36",
+    "number": 36,
+    "prompt": "En la representación numérica de permisos, ¿qué significa el valor 755 aplicado a un directorio?",
+    "options": [
+      "El propietario tiene todos los permisos, mientras que el grupo y otros solo lectura y ejecución.",
+      "El archivo es privado y solo el propietario puede leerlo y modificarlo.",
+      "Todos los usuarios tienen permisos totales de lectura, escritura y ejecución."
+    ],
+    "page": 8,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-37",
+    "number": 37,
+    "prompt": "¿Qué caracteriza al formato de archivo ODF (Open Document Format)?",
+    "options": [
+      "Es el formato binario nativo que solo puede ser abierto por las versiones antiguas de Microsoft Office.",
+      "Es un estándar abierto basado en XML, diseñado para ser independiente de cualquier aplicación o plataforma.",
+      "Es un formato exclusivo para presentaciones que no permite la inclusión de imágenes ni gráficos vectoriales."
+    ],
+    "page": 8,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-38",
+    "number": 38,
+    "prompt": "En la gestión de certificados digitales en un navegador, ¿cuál es la función de una Autoridad de Certificación (CA)?",
+    "options": [
+      "Almacenar de forma segura las contraseñas de todos los usuarios de Internet.",
+      "Actuar como un tercero de confianza que valida la identidad del titular y firma el certificado",
+      "Bloquear automáticamente el acceso a sitios web que tengan contenido inadecuado."
+    ],
+    "page": 8,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-39",
+    "number": 39,
+    "prompt": "¿Qué componente de un certificado digital permite al receptor verificar la firma del emisor?",
+    "options": [
+      "La clave pública del emisor.",
+      "La clave privada del emisor.",
+      "La clave pública del receptor"
+    ],
+    "page": 8,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-40",
+    "number": 40,
+    "prompt": "¿Qué protocolo es específico del entorno OES de Microfocus para proporcionar servicios de servidor y cliente?",
+    "options": [
+      "NCP",
+      "CIFS",
+      "NFS"
+    ],
+    "page": 8,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-41",
+    "number": 41,
+    "prompt": "En el ámbito de los conceptos básicos de la metodología de Análisis y Diseño Orientado a Objetos, ¿qué término de la orientación a objetos permite que una única interfaz o identificador (nombre de un método o mensaje) represente diferentes implementaciones funcionales dependiendo de la clase del objeto que lo recibe?",
+    "options": [
+      "Abstracción.",
+      "Herencia.",
+      "Polimorfismo"
+    ],
+    "page": 9,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-42",
+    "number": 42,
+    "prompt": "En el contexto del lenguaje unificado de modelado (UML). ¿Cuál de los siguientes diagramas es el más adecuado para modelar el paso de mensajes entre objetos ordenados cronológicamente?",
+    "options": [
+      "Diagrama de Secuencia.",
+      "Diagrama de Objetos.",
+      "Diagrama de Actividades."
+    ],
+    "page": 9,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-43",
+    "number": 43,
+    "prompt": "En el contexto del mantenimiento y control de versiones de sistemas de información, según el estándar ISO/IEC 14764, ¿cómo se denomina al mantenimiento realizado para corregir errores descubiertos después de la entrega del software?",
+    "options": [
+      "Mantenimiento Preventivo",
+      "Mantenimiento Correctivo.",
+      "Mantenimiento Perfectivo."
+    ],
+    "page": 9,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-44",
+    "number": 44,
+    "prompt": "En el contexto de la programación estructurada, el teorema de Böhm-Jacopini demuestra que cualquier programa computable puede escribirse utilizando exclusivamente tres estructuras de control: 'secuencia','selección' e 'iteración'. ¿Cuál es la característica principal de la 'secuencia'?",
+    "options": [
+      "La ejecución de instrucciones una tras otra en el orden en que aparecen.",
+      "El salto incondicional a cualquier linea del programa.",
+      "La repetición varias veces de un mismo bloque de código mientras se cumpla una condición"
+    ],
+    "page": 9,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-45",
+    "number": 45,
+    "prompt": "En el paradigma de Programación Orientada a Objetos, ¿qué define técnicamente a una \"Clase\"?",
+    "options": [
+      "Una instancia concreta de un objeto en tiempo de ejecución.",
+      "Una función aislada que no comparte estado con otras partes del programa.",
+      "Es una plantilla para objetos que incluye definiciones de todos los atributos y operaciones"
+    ],
+    "page": 9,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-46",
+    "number": 46,
+    "prompt": "Según el estándar RFC 9110, ¿qué método HTTP tiene como función principal la lectura de un recurso identificado, siendo definido formalmente como un \"método seguro\" y no tiene como objetivo alterar el estado del servidor?",
+    "options": [
+      "PUT.",
+      "GET.",
+      "DELETE."
+    ],
+    "page": 10,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-47",
+    "number": 47,
+    "prompt": "¿Qué significan exactamente las siglas JVM y cuál es su función primordial en el ecosistema Java?",
+    "options": [
+      "Java Verified Module; es un componente de seguridad que valida la firma digital de las librerías.",
+      "Java Virtual Machine; proporciona un entorno de ejecución en el que se ejecuta el código de bytes (bytecode) de Java.",
+      "Java Variable Method; es el sistema que gestiona la declaración de variables dentro de un método."
+    ],
+    "page": 10,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-48",
+    "number": 48,
+    "prompt": "En el contexto de las aplicaciones en entorno WEB. ¿Qué significan las siglas HTML?",
+    "options": [
+      "HyperText Markup Language (lenguaje de marcado de hipertexto).",
+      "Hyperlink Tool Management (Gestión de Herramientas de Hipervínculo).",
+      "High-level Text Multimedia Language (Lenguaje Multimedia de Texto de Alto Nivel)"
+    ],
+    "page": 10,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-49",
+    "number": 49,
+    "prompt": "¿Cómo se denomina el entorno de desarrollo integrado (IDE) que contiene un conjunto de herramientas creadas por Apple para el desarrollo de aplicaciones iOS?",
+    "options": [
+      "Xcode.",
+      "Eclipse.",
+      "Visual Studio Code."
+    ],
+    "page": 10,
+    "answer": 0
+  },
+  {
+    "id": "zaragoza-2026-1731-1-50",
+    "number": 50,
+    "prompt": "En el contexto de los repositorios y la generación de código. ¿Qué comando de Git se utiliza para actualizar una o más ramas, etiquetas u otras referencias en un repositorio remoto desde su repositorio local y envía todos los datos necesarios que no se encuentren en el repositorio remoto?",
+    "options": [
+      "git pull.",
+      "git push.",
+      "git launch."
+    ],
+    "page": 10,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-R1",
+    "number": 51,
+    "prompt": "Tras una ampliación de servidores en un rack, se detecta que el aire caliente expulsado está recirculando hacia la entrada de los equipos frontales. Como técnico de CPD, ¿qué medida de climatización es la más eficiente para corregir este problema?",
+    "options": [
+      "Aumentar la velocidad de los ventiladores de las unidades CRAC de toda la sala de forma indiscriminada.",
+      "Instalar paneles ciegos en las unidades U libres del rack y asegurar el cerramiento del pasillo frío para evitar la mezcla de flujos de aire.",
+      "Configurar las rejillas del suelo técnico para que expulsen aire directamente al pasillo caliente, forzando la extracción."
+    ],
+    "page": 11,
+    "answer": 1
+  },
+  {
+    "id": "zaragoza-2026-1731-1-R2",
+    "number": 52,
+    "prompt": "En el contexto de RADIUS, ¿qué dispositivo suele actuar como el 'RADIUS Client'?",
+    "options": [
+      "Un servidor de aplicaciones para securizar una web.",
+      "Una base de datos SQL donde se guardan las contraseñas.",
+      "Un Servidor de Acceso a la Red (NAS), como un punto de acceso WiFi o un servidor VPN"
+    ],
+    "page": 11,
+    "answer": 2
+  },
+  {
+    "id": "zaragoza-2026-1731-1-R3",
+    "number": 53,
+    "prompt": "En el contexto de LDAP ¿qué representa un 'Distinguished Name' (DN)?",
+    "options": [
+      "El nombre relativo de un objeto dentro de su contenedor inmediato.",
+      "Una contraseña cifrada utilizada para la operación de 'Bind'.",
+      "La ruta completa y única que identifica unívocamente a una entrada en el árbol de directorio"
+    ],
+    "page": 11,
+    "answer": 2
+  }
+]

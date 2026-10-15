@@ -1,0 +1,31 @@
+import {lessons as originalLessons} from './lessons.mjs';
+const links={
+ "Puertos":"aragon-2026-240023-1-36",
+ "Linux / permisos":"aragon-2026-240023-1-77",
+ "CPU / registros":"aragon-2026-240023-1-21",
+ "Contraseñas":"aragon-2026-240023-2-28",
+ "SQL / JOIN":"aragon-2026-240023-2-15",
+ "SQL / NULL":"aragon-2026-240023-2-16",
+ "Complejidad":"aragon-2026-240023-1-24",
+ "Recursividad":"aragon-2026-240023-2-2",
+ "Java / operadores":"aragon-2026-240023-2-3",
+ "Cloud":"aragon-2026-240023-1-52",
+  "ICMP": "tai-2024-0-0-73",
+  "IPv4 / IPv6": "tai-2024-0-0-74",
+  "Subnetting": "tai-2024-2-0-1",
+  "ARP": "tai-2024-0-0-58",
+  "DNS": "tai-2024-2-0-6",
+  "OSI": "tai-2024-0-0-72",
+  "Windows": "tai-2024-0-0-56",
+  "Linux / procesos": "tai-2024-0-0-55",
+  "Ataques web": "tai-2024-0-0-69",
+  "Hash": "tai-2024-2-0-16",
+  "ACID": "tai-2024-1-0-14",
+  "DELETE / DROP": "tai-2024-0-0-38",
+  "Claves": "tai-2024-0-0-28",
+  "FIFO / LIFO": "tai-2024-0-0-24",
+  "POO": "tai-2024-0-0-40",
+  "HTTP / errores": "tai-2024-0-0-75",
+  "Kernel / VM": "tai-2024-0-0-26"
+};
+export const lessons=originalLessons.filter(l=>l.block!=='I').map(l=>({...l,questionId:links[l.topic]??''}));

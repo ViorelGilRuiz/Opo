@@ -1,0 +1,27 @@
+{
+  "name": "oposprint",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Preparación técnica C1 con historial local",
+  "engines": {
+    "node": "^22.13.0 || >=24"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env scripts/server.mjs",
+    "start": "node --env-file-if-exists=.env scripts/server.mjs --dist",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.core.json --noEmit",
+    "lint": "eslint .",
+    "build": "npm run typecheck && npm run lint && npm run contentcheck && node scripts/build.mjs",
+    "test": "node --test",
+    "contentcheck": "node scripts/check-content.mjs",
+    "import:official": "node scripts/import-official.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "linkedom": "^0.18.13",
+    "prettier": "^3.9.9",
+    "typescript": "^5.0.0"
+  }
+}

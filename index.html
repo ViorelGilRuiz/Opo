@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ff">
+  <title>OpoSprint · Tu espacio de estudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+  <script type="module" src="ui/platform.mjs"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="OpoSprint, inicio">
+      <span class="brand-mark">O<span>+</span></span>
+      <span>opo<span class="brand-light">sprint</span></span>
+    </a>
+    <div class="topbar-right">
+      <span class="exam-pill"><span class="live-dot"></span> RUTA C1 · ARAGÓN + TAI</span>
+      <button class="icon-button" id="resetProgress" type="button" title="Borrar el historial del simulacro clásico" aria-label="Borrar historial clásico">↺</button>
+    </div>
+  </header>
+
+  <nav class="learning-nav" aria-label="Navegación principal">
+    <button data-route="inicio">Inicio</button><button data-route="aprender">Aprender</button><button data-route="practicar">Practicar</button><button data-route="simulacro">Simulacro</button><button data-route="errores">Repasar errores</button><button data-route="progreso">Mi progreso</button><button data-route="temario">Temario</button><button data-route="profesor">Profesor ✦</button>
+    <label class="track-label">Itinerario<select id="trackChoice" aria-label="Itinerario de oposición"></select></label>
+  </nav>
+  <main>
+    <section class="screen dashboard-screen" id="dashboard">
+      <div id="learningHome"></div>
+      <div class="classic-entry"><span>Simulacro clásico con preguntas oficiales técnicas.</span><button class="secondary-button" id="startExam" type="button">Simulacro clásico →</button></div>
+      <div class="section-heading">
+        <div><div class="eyebrow">TU PANEL</div><h2>Historial del simulacro clásico</h2></div>
+        <span class="saved-note"><span class="save-dot"></span> Se guarda en este dispositivo</span>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card stat-purple">
+          <div class="stat-icon">◷</div><div class="stat-label">Simulacros completados</div>
+          <div class="stat-value" id="attemptCount">0</div><div class="stat-foot">Cada intento te hace más fuerte</div>
+        </article>
+        <article class="stat-card stat-yellow">
+          <div class="stat-icon">↗</div><div class="stat-label">Mejor nota penalizada</div>
+          <div class="stat-value"><span id="bestScore">—</span><small>/10</small></div><div class="stat-foot" id="bestScoreFoot">Tu marca personal empieza aquí</div>
+        </article>
+        <article class="stat-card stat-mint">
+          <div class="stat-icon">◎</div><div class="stat-label">Media de aciertos</div>
+          <div class="stat-value"><span id="averageRate">—</span><small>%</small></div><div class="stat-foot">Lo importante es seguir sumando</div>
+        </article>
+      </div>
+
+      <div class="lower-grid">
+        <article class="focus-card">
+          <div class="focus-top"><span class="focus-icon">🎯</span><span class="eyebrow">FOCO DE ESTA RONDA</span></div>
+          <h3 id="focusTitle">Refuerza lo que más puntúa</h3>
+          <p id="focusText">Redes, DNS, subnetting y seguridad aparecerán con mimo. Después del simulacro, el plan pondrá primero los temas que más te cuesten.</p>
+          <div class="focus-tags" id="focusTags">
+            <span>ICMP · ping</span><span>DNS · CNAME</span><span>ACID</span><span>FIFO / LIFO</span>
+          </div>
+        </article>
+        <article class="route-card">
+          <div class="route-title"><span>🧭</span><div><div class="eyebrow">TU RUTA</div><h3>Camino a C1</h3></div></div>
+          <div class="route-item"><span class="route-check">✓</span><div><b>Base técnica</b><small>DAW, sistemas y redes</small></div><span class="route-state">EN MARCHA</span></div>
+          <div class="route-line"></div>
+          <div class="route-item"><span class="route-number">1</span><div><b>Primer simulacro</b><small>50 preguntas oficiales · Aragón C1</small></div><span class="route-state route-next">AHORA</span></div>
+          <div class="route-line"></div>
+          <div class="route-item"><span class="route-number">2</span><div><b>Detectar tus puntos débiles</b><small>Plan de repaso adaptativo</small></div></div>
+          <div class="route-line"></div>
+          <div class="route-item"><span class="route-number">3</span><div><b>Subir al nivel de oposición</b><small>Constancia → plaza</small></div></div>
+        </article>
+      </div>
+      <footer class="page-footer"><span>Hecho para avanzar, no para agobiar.</span><span>TAI · Ejecutivo de Informática · Aragón</span></footer>
+    </section>
+
+    <section class="screen quiz-screen hidden" id="quiz" aria-live="polite">
+      <div class="quiz-topline">
+        <button class="back-button" id="backToDashboard" type="button">← <span>Salir del simulacro</span></button>
+        <span class="exam-pill"><span class="live-dot"></span> SIMULACRO TÉCNICO C1</span>
+        <span class="question-counter" id="questionCounter">01 <span>/ 50</span></span>
+      </div>
+      <div class="quiz-progress"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+      <div class="quiz-layout">
+        <section class="question-panel">
+          <div class="question-meta"><span class="category-label" id="categoryLabel">REDES</span><span class="difficulty-label" id="difficultyLabel">● MEDIA</span></div>
+          <div class="question-number" id="questionNumber">PREGUNTA 01</div>
+          <h2 id="questionText"></h2>
+          <div class="options-list" id="optionsList" role="radiogroup" aria-labelledby="questionText"></div>
+          <div class="quiz-navigation">
+            <button class="secondary-button" id="previousQuestion" type="button">← Anterior</button>
+            <span class="answered-caption" id="answeredCaption">0 de 50 respondidas</span>
+            <button class="primary-button next-button" id="nextQuestion" type="button">Siguiente <span>→</span></button>
+          </div>
+          <div class="finish-wrap"><button id="finishExam" class="finish-button" type="button" disabled>Finalizar y ver corrección <span>✓</span></button><p id="finishHint">Responde a todas las preguntas para finalizar.</p></div>
+        </section>
+        <aside class="question-rail">
+          <div class="rail-heading"><div><b>Tu recorrido</b><small>Salta a cualquier pregunta</small></div><span class="rail-progress" id="railProgress">0/50</span></div>
+          <div class="question-grid" id="questionGrid" aria-label="Navegación de preguntas"></div>
+          <div class="rail-legend"><span><i class="legend-current"></i> actual</span><span><i class="legend-done"></i> respondida</span></div>
+          <div class="rail-tip"><span>💡</span><p><b>Sin presión:</b> puedes cambiar tus respuestas hasta finalizar. Las soluciones esperan al final.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen results-screen hidden" id="results">
+      <div class="results-header">
+        <button class="back-button" id="backFromResults" type="button">← <span>Volver al panel</span></button>
+        <span class="exam-pill">SIMULACRO COMPLETADO</span>
+      </div>
+      <div class="results-hero">
+        <div class="result-medal" id="resultMedal">✦</div>
+        <div class="eyebrow">SIMULACRO TÉCNICO C1 · 50 PREGUNTAS</div>
+        <h1 id="resultTitle">¡Simulacro completado!</h1>
+        <p id="resultSubtitle">El esfuerzo de hoy es conocimiento que te llevas para siempre.</p>
+      </div>
+      <div class="result-summary">
+        <article class="result-score-card"><div class="eyebrow">NOTA CON PENALIZACIÓN</div><div class="big-score"><span id="resultScore">0,00</span><small>/10</small></div><div class="score-formula">Nota orientativa: Zaragoza −0,50; Aragón/TAI −0,33 por fallo</div></article>
+        <article class="result-metric"><span class="metric-icon metric-green">✓</span><div><small>Aciertos</small><b id="resultCorrect">0</b></div></article>
+        <article class="result-metric"><span class="metric-icon metric-red">×</span><div><small>Fallos</small><b id="resultWrong">0</b></div></article>
+        <article class="result-metric"><span class="metric-icon metric-blue">◎</span><div><small>Porcentaje</small><b><span id="resultPercent">0</span>%</b></div></article>
+      </div>
+      <div class="analysis-grid">
+        <article class="analysis-card"><div class="analysis-heading"><span>📊</span><div><div class="eyebrow">TU FOTO DE HOY</div><h2>Fortalezas y siguiente paso</h2></div></div><div id="topicAnalysis"></div></article>
+        <article class="next-step-card"><div class="eyebrow">TU SIGUIENTE PASO</div><h2 id="nextStepTitle">Aprender de cada pregunta</h2><p id="nextStepText">Lee la explicación incluso en las que acertaste: fijar el porqué es lo que te prepara para las preguntas trampa.</p><button id="reviewMistakes" class="review-button" type="button">Repasar corrección <span>↓</span></button></article>
+      </div>
+      <section class="corrections-section" id="correctionsSection">
+        <div class="corrections-heading"><div><div class="eyebrow">APRENDER, NO SOLO CONTAR</div><h2>Corrección pregunta a pregunta</h2><p>La opción correcta se revela aquí, después de terminar el simulacro.</p></div><button class="filter-button" id="filterWrong" type="button" aria-pressed="false">Ver solo mis fallos</button></div>
+        <div class="corrections-list" id="correctionsList"></div>
+      </section>
+      <div class="results-bottom"><button class="secondary-button" id="returnDashboard" type="button">Volver al panel</button><button class="primary-button" id="retryExam" type="button">Hacer otro simulacro <span>→</span></button></div>
+    </section>
+    <section class="screen hidden learning-screen" id="learningPlatform" aria-label="Espacio de aprendizaje"></section>
+  </main>
+  <dialog id="teacherDialog" class="teacher-dialog" aria-label="Profesor de OpoSprint"><header class="teacher-dialog-top"><span class="eyebrow">APRENDE SIN PERDER TU SITIO</span><button class="secondary-button" data-close-teacher>Cerrar ✕</button></header><div id="teacherModalContent"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

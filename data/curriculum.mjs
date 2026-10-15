@@ -1,0 +1,313 @@
+import {officialCourseTopics} from "./official-course.mjs";
+import { courseSources } from "./course-sources.mjs";
+import { courseTopics } from "./course-topics.mjs";
+/** @type {import('../core/pedagogy-types.js').Curriculum} */
+export const archivedCurriculum = {
+  id: "tai-foundations",
+  revision: 1,
+  title: "TAI C1 · de fundamentos a examen",
+  programSourceId: "program-tai",
+  steps: [
+    { id: "introduction", title: "Introducción" },
+    { id: "concepts", title: "Conceptos" },
+    { id: "example", title: "Ejemplo" },
+    { id: "exercise", title: "Ejercicio" },
+    { id: "minitest", title: "Minitest" },
+    { id: "review", title: "Repaso" },
+  ],
+  sources: courseSources,
+  topics: courseTopics,
+  areas: [
+    {
+      id: "estado",
+      title: "Organización del Estado y Administración Pública",
+      block: "I",
+      officialRefs: ["I.1", "I.2", "I.3", "I.4", "I.5"],
+      topicIds: [],
+      legacyTopics: ["Constitución / administración"],
+      coverage:
+        "Faltan lecciones completas de Constitución, órganos, empleo público, igualdad y transparencia. Hay preguntas históricas.",
+    },
+    {
+      id: "administracion-electronica",
+      title: "Administración electrónica",
+      block: "I",
+      officialRefs: ["I.6", "I.8", "I.9"],
+      topicIds: [],
+      legacyTopics: ["Administración electrónica"],
+      coverage:
+        "Pendiente: identidad/firma, procedimientos, servicios comunes, ENS y ENI con revisión normativa.",
+    },
+    {
+      id: "normativa",
+      title: "Protección de datos y seguridad normativa",
+      block: "I",
+      officialRefs: ["I.7", "I.8"],
+      topicIds: [],
+      legacyTopics: ["Protección de datos"],
+      coverage:
+        "Pendiente de desarrollo y revisión jurídica; no se presenta normativa histórica como vigente.",
+    },
+    {
+      id: "hardware",
+      title: "Hardware",
+      block: "II",
+      officialRefs: ["II.1", "II.2"],
+      topicIds: [],
+      legacyTopics: ["Memoria", "CPU / registros"],
+      coverage:
+        "Fichas parciales; periféricos, representación de información y almacenamiento por desarrollar.",
+    },
+    {
+      id: "arquitectura",
+      title: "Arquitectura de computadores",
+      block: "II",
+      officialRefs: ["II.1"],
+      topicIds: [],
+      legacyTopics: ["ALU / MMU", "CPU / registros"],
+      coverage: "Fichas parciales; recorrido completo pendiente.",
+    },
+    {
+      id: "operating-systems",
+      title: "Sistemas operativos",
+      block: "II",
+      officialRefs: ["II.4"],
+      topicIds: ["operating-systems"],
+      legacyTopics: ["Linux / procesos", "Memoria"],
+      coverage:
+        "Demostración publicada: procesos, hilos, kernel. Faltan planificación, memoria virtual, ficheros y SO móviles.",
+    },
+    {
+      id: "windows",
+      title: "Windows",
+      block: "II",
+      officialRefs: ["II.4", "IV.1"],
+      topicIds: [],
+      legacyTopics: ["Windows"],
+      coverage: "Fichas de diagnóstico; administración detallada pendiente.",
+    },
+    {
+      id: "linux",
+      title: "Linux / Unix",
+      block: "II",
+      officialRefs: ["II.4", "IV.1"],
+      topicIds: [],
+      legacyTopics: ["Linux / permisos", "Linux / ext4", "Linux / procesos"],
+      coverage: "Fichas existentes; recorrido completo pendiente.",
+    },
+    {
+      id: "redes",
+      title: "Redes",
+      block: "IV",
+      officialRefs: ["IV.4", "IV.6", "IV.10"],
+      topicIds: [],
+      legacyTopics: ["ARP", "Puertos"],
+      coverage:
+        "Cobertura parcial: dispositivos, LAN, Wi-Fi y monitorización pendientes de recorridos completos.",
+    },
+    {
+      id: "tcpip",
+      title: "TCP/IP",
+      block: "IV",
+      officialRefs: ["IV.7"],
+      topicIds: ["tcpip"],
+      legacyTopics: ["ICMP", "Puertos"],
+      coverage: "Demostración: capas, transporte e ICMP; ampliar protocolos.",
+    },
+    {
+      id: "osi",
+      title: "Modelo OSI",
+      block: "IV",
+      officialRefs: ["IV.7"],
+      topicIds: ["osi"],
+      legacyTopics: ["OSI"],
+      coverage: "Demostración de las siete capas y funciones.",
+    },
+    {
+      id: "ipv4",
+      title: "IPv4",
+      block: "IV",
+      officialRefs: ["IV.7"],
+      topicIds: ["ipv4"],
+      legacyTopics: ["IPv4 / IPv6", "ARP"],
+      coverage: "Fundamentos IPv4 y siguiente salto; IPv6 detallado pendiente.",
+    },
+    {
+      id: "subnetting",
+      title: "Subnetting",
+      block: "IV",
+      officialRefs: ["IV.7"],
+      topicIds: ["subnetting"],
+      legacyTopics: ["Subnetting"],
+      coverage: "Demostración: prefijos, límites, capacidad y división.",
+    },
+    {
+      id: "servicios-red",
+      title: "DNS / DHCP / HTTP / HTTPS",
+      block: "IV",
+      officialRefs: ["IV.7", "IV.8"],
+      topicIds: ["dns"],
+      legacyTopics: ["DNS", "Puertos", "Diagnóstico DNS", "TLS"],
+      coverage: "DNS publicado; DHCP y recorridos de HTTP/HTTPS pendientes.",
+    },
+    {
+      id: "seguridad",
+      title: "Seguridad informática",
+      block: "IV",
+      officialRefs: ["IV.5", "IV.9", "III.8"],
+      topicIds: ["security"],
+      legacyTopics: ["Ataques web", "Mínimo privilegio", "CSRF"],
+      coverage:
+        "Fundamentos técnicos publicados; seguridad física, VPN y CPD requieren ampliación.",
+    },
+    {
+      id: "criptografia",
+      title: "Criptografía",
+      block: "IV",
+      officialRefs: ["IV.5"],
+      topicIds: [],
+      legacyTopics: ["Hash", "AES / hash", "Contraseñas", "TLS"],
+      coverage:
+        "Fichas parciales; firma, claves e infraestructura de confianza pendientes.",
+    },
+    {
+      id: "bases-datos",
+      title: "Bases de datos",
+      block: "II",
+      officialRefs: ["II.5", "III.1", "IV.2"],
+      topicIds: [],
+      legacyTopics: ["ACID", "Claves", "Índices"],
+      coverage:
+        "Fichas existentes; modelado, normalización y NoSQL pendientes.",
+    },
+    {
+      id: "sql",
+      title: "SQL",
+      block: "III",
+      officialRefs: ["III.3"],
+      topicIds: ["sql"],
+      legacyTopics: ["DELETE / DROP", "SQL / NULL", "SQL / JOIN"],
+      coverage:
+        "Demostración: consulta, NULL y modificación. JOIN, transacciones y programación del SGBD pendientes.",
+    },
+    {
+      id: "programacion",
+      title: "Programación",
+      block: "III",
+      officialRefs: ["III.2", "III.4"],
+      topicIds: [],
+      legacyTopics: ["POO", "Recursividad", "Java / operadores", "Excepciones"],
+      coverage:
+        "Fichas existentes; lenguajes, tipos, UML y patrones pendientes de recorrido.",
+    },
+    {
+      id: "algoritmos",
+      title: "Algoritmos y estructuras",
+      block: "II",
+      officialRefs: ["II.3"],
+      topicIds: [],
+      legacyTopics: ["FIFO / LIFO", "Complejidad"],
+      coverage:
+        "Fichas parciales; estructuras y organización de ficheros por ampliar.",
+    },
+    {
+      id: "desarrollo-web",
+      title: "Desarrollo web",
+      block: "III",
+      officialRefs: ["III.6", "III.7"],
+      topicIds: [],
+      legacyTopics: [
+        "HTTP / idempotencia",
+        "HTTP / errores",
+        "CORS",
+        "JWT",
+        "HTTP / caché",
+        "JSON",
+      ],
+      coverage:
+        "Fichas parciales; cliente/servidor, servicios y arquitectura multicapa por ampliar.",
+    },
+    {
+      id: "lenguajes-web",
+      title: "XML / HTML / CSS / JavaScript",
+      block: "III",
+      officialRefs: ["III.7"],
+      topicIds: [],
+      legacyTopics: ["JSON"],
+      coverage:
+        "Pendiente de recorridos completos. JSON es apoyo, no sustituye estos lenguajes.",
+    },
+    {
+      id: "sistemas-informacion",
+      title: "Sistemas de información",
+      block: "II",
+      officialRefs: ["II.1"],
+      topicIds: [],
+      legacyTopics: [],
+      coverage:
+        "Pendiente: representación de información y componentes de los sistemas.",
+    },
+    {
+      id: "virtualizacion",
+      title: "Virtualización y cloud",
+      block: "IV",
+      officialRefs: ["IV.2", "IV.3"],
+      topicIds: [],
+      legacyTopics: ["Kernel / VM", "Dockerfile", "Persistencia", "Cloud"],
+      coverage:
+        "Fichas de VM y contenedores; cloud es ampliación didáctica, no epígrafe literal de este programa.",
+    },
+    {
+      id: "copias",
+      title: "Copias de seguridad",
+      block: "IV",
+      officialRefs: ["IV.2"],
+      topicIds: [],
+      legacyTopics: [],
+      coverage:
+        "Preguntas históricas disponibles; recorrido de recuperación y backup pendiente.",
+    },
+    {
+      id: "gestion",
+      title: "Gestión de sistemas",
+      block: "IV",
+      officialRefs: ["IV.1", "IV.3", "IV.4", "IV.5"],
+      topicIds: [],
+      legacyTopics: ["Puertos / RDP", "Diagnóstico TLS"],
+      coverage: "Administración, correo, incidentes y CPD por desarrollar.",
+    },
+    {
+      id: "plataformas",
+      title: "Java / Jakarta EE / .NET",
+      block: "III",
+      officialRefs: ["III.5"],
+      topicIds: [],
+      legacyTopics: [],
+      coverage:
+        "Epígrafe oficial no explícito en la lista propuesta; pendiente.",
+    },
+    {
+      id: "accesibilidad",
+      title: "Accesibilidad, usabilidad y diseño universal",
+      block: "III",
+      officialRefs: ["III.8"],
+      topicIds: [],
+      legacyTopics: [],
+      coverage:
+        "Epígrafe oficial pendiente; requiere fuentes normativas para obligaciones aplicables.",
+    },
+    {
+      id: "ingenieria",
+      title: "Repositorios, pruebas y metodologías",
+      block: "III",
+      officialRefs: ["III.9"],
+      topicIds: [],
+      legacyTopics: [],
+      coverage:
+        "Epígrafe oficial pendiente: Git, pruebas, documentación y desarrollo colaborativo.",
+    },
+  ],
+};
+
+/** @type {import("../core/pedagogy-types.js").Curriculum} */
+export const curriculum={...archivedCurriculum,revision:3,sources:[...archivedCurriculum.sources,{id:"aragon-2026",title:"Ejecutivos de Informática C1 Aragón · examen 13/06/2026",url:"https://www.aragon.es/-/ejecutivos-de-informatica.-c1.-oferta-de-empleo-publico-de-2018-y-2022",kind:"historical-exam",version:"Convocatoria 24/0023 · plantilla definitiva 01/07/2026",checkedAt:"2026-10-07"}],topics:officialCourseTopics,areas:archivedCurriculum.areas.filter(a=>a.block!=="I")};

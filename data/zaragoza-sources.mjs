@@ -1,0 +1,82 @@
+export const zaragozaSource = {
+  "title": "Ayuntamiento de Zaragoza · Técnica/o Auxiliar Informática/o C1",
+  "examDate": "2026-04-28",
+  "checkedAt": "2026-10-08",
+  "definitiveKeyPublication": "2026-06-03",
+  "page": "https://www.zaragoza.es/oferta/ofertaDetalle.jsp?id=1731",
+  "excluded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    "R4",
+    "R5"
+  ],
+  "annulled": [
+    15,
+    16
+  ],
+  "documents": [
+    {
+      "name": "first",
+      "url": "https://www.zaragoza.es/cont/paginas/oferta/archivos/1-1731_Cuestionario%201EJE.pdf",
+      "sha256": "d7ab1b468ee3ac08371bb899ac23cb9ab34ecf7f30b3cd0ddb9c869595d62ac2"
+    },
+    {
+      "name": "definitive-key",
+      "url": "https://www.zaragoza.es/cont/paginas/oferta/archivos/3-%201731%20PLANTILLA%20DEFINITIVA%201EJE.pdf",
+      "sha256": "c963687db113e3d0db9efbf49ea3fa9dc68e17ca54c4a2caaba5ca7d74f4d102"
+    }
+  ],
+  "keys": {
+    "12": 1,
+    "13": 2,
+    "14": 1,
+    "18": 0,
+    "21": 2,
+    "22": 1,
+    "23": 1,
+    "24": 1,
+    "25": 0,
+    "26": 1,
+    "27": 2,
+    "28": 1,
+    "29": 0,
+    "30": 2,
+    "31": 2,
+    "32": 0,
+    "33": 2,
+    "34": 1,
+    "35": 2,
+    "36": 0,
+    "37": 1,
+    "38": 1,
+    "39": 0,
+    "40": 0,
+    "41": 2,
+    "42": 0,
+    "43": 1,
+    "44": 0,
+    "45": 2,
+    "46": 1,
+    "47": 1,
+    "48": 0,
+    "49": 0,
+    "50": 1,
+    "R1": 1,
+    "R2": 2,
+    "R3": 2
+  }
+};
